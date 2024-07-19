@@ -551,7 +551,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrund der Navigation */
     z-index: 2000; /* Über anderen Elementen */
     transition: top 0.3s;
-    height: 240px; /* Set a fixed height for the nav bar */
+    height: 230px; /* Set a fixed height for the nav bar */
 }
 
 /* Weitere Stile bleiben unverändert... */
