@@ -452,13 +452,15 @@ footer address {
     }
     section { min-width:80%;
     padding: 0;}
+    img { min-width: 80%;}
 }
 
 img {
     max-width: 70%;
+    min-width: 50%;
     height: auto;
     border-radius: 5px;
-    margin-left: 14%;
+    margin-left: 13%;
     justify-content: center;
     align-items: center;
 }
