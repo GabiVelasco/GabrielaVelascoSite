@@ -1,0 +1,437 @@
+/* Allgemeine Stile */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background: linear-gradient(270deg, #333, #444);
+    background-size: 400% 400%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    animation: gradientAnimation 15s ease infinite;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+
+.style1 {
+
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+    
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word; /* Garante justificação completa */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 20%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right:5%;
+    
+} 
+
+.nav-links {
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0a1411;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content ul li a {
+    list-style-type: none;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover { color: #ffcc00;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #be8c20;}
+
+/* Media Query für kleine Bildschirme */
+@media screen and (max-width: 960px) {
+    .nav-links {
+        display: none; /* Verstecke die Hauptnavigation */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60%;
+        background-color: #333;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 1000;
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        padding: 20px 0;
+    }
+
+    .burger {
+        display: block; /* Zeige das Burger-Menü-Symbol */
+    }
+    img {
+            justify-content: center;
+            min-width: 70%;
+            max-width: 80%;
+    }
+
+       /* Show the dropdown button if width is smaller than 60% */
+       .dropdown .dropbtn {
+        display: block;
+    }
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+section {
+    padding: 2rem;
+    background-color: #fff;
+    /* margin: 2rem 0; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.grey {
+    background-color: grey;
+}
+
+.rosa {
+    background-color: rosybrown;
+}
+.red {
+    background-color: rgba(127, 46, 76);
+}
+
+
+.darkgrey {
+    background-color: #414141;
+}
+.blackback {
+    background-color: black;
+}
+
+.white {
+    color: white;
+}
+
+.whitebackground {
+    background-color: white; }
+
+.darkgreyletter {
+    color:  #414141;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer address {
+    margin: 0;
+}
+
+
+/* Allgemeine Stile */
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center; 
+
+    
+
+}
+.container img {justify-content: center; align-items: center;}
+
+.story {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.story h2 {
+    color: #333;
+}
+
+.story p {
+    text-align: justify;
+    text-justify: inter-word; /* Garante justificação completa */
+}
+
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    justify-content: center; 
+}
+
+.mySlides {
+    display: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    -ms-text-combine-horizontal: middle;
+    
+}
+
+.fade {
+   
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Next & previous buttons */
+/* Optional: Styles for navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+    /* Stile für Standorte */
+    /* Stile für Standorte */
+
+#standorte {
+    /* margin-top: 50px; */
+}
+
+#standorte h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.location-img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.location .story {
+    width: 45%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .location {
+        flex-direction: column;
+    }
+    .location-img, .location .story {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 14%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img {
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+main {
+
+    justify-content: center;
+    align-items: center;
+}
+
+
