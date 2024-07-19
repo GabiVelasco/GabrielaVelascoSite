@@ -249,7 +249,7 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #fff;
     /* margin: 2rem 0; */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -450,6 +450,8 @@ footer address {
         width: 100%;
         justify-content: center;
     }
+    section { min-width:80%;
+    padding: 0;}
 }
 
 img {
