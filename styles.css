@@ -258,9 +258,9 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: #fff;
-    /* margin: 2rem 0; */
+    margin: 2rem 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 
