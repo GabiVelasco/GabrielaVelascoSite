@@ -122,6 +122,9 @@ nav {
     justify-content: center;
     align-items: center; 
     padding-top: 100px;
+    cursor: pointer;
+
+    font-size: 12px;
 }
 
 .nav-links li {
@@ -238,6 +241,16 @@ nav {
        /* Show the dropdown button if width is smaller than 60% */
        .dropdown .dropbtn {
         display: block;
+    }
+
+    .languages {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .burger {
+        display: block;
+        order: 2;
     }
 }
 
