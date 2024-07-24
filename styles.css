@@ -73,15 +73,15 @@ header h1 {
     font-size: 2.5rem;
     font-size: calc(18px + .5vw);
     font-size-adjust: auto;
-    top: 30%;
+    /* top: 27px; */
 
 }
 
 h1 { font-size: calc(18px + .5vw);}
 h2 { font-size: calc(12px + .5vw);}
 
-.header1 h1 { font-size: calc(22px + .5vw);}
-.header1 h2 {  top: 30%;}
+.header1 h1 { top: 27px; font-size: calc(22px + .5vw);}
+.header1 h2 {  top: 27px;}
 
 
 .style1 {
@@ -121,7 +121,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center; 
-    padding-top: 100px;
+    padding-top: 105px;
     cursor: pointer;
 
     font-size: 12px;
@@ -147,6 +147,8 @@ nav {
     cursor: pointer;
     padding: 10px;
 }
+.top {
+    top: 20px; }
 
 .line1, .line2, .line3 {
     width: 25px;
@@ -258,10 +260,26 @@ nav {
 
     }
 
+    .lang-button:hover {
+        background-color: #ffcc00;
+    }
+
   
 }
 
+.language-selector button:hover {
+    background-color: #ffcc00;
 
+}
+
+nav button:hover {
+    background-color: #ffcc00;
+
+}
+
+.lang-button:hover {
+    background-color: #ffcc00;
+}
 
 nav ul {
     list-style-type: none;
