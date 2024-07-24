@@ -155,7 +155,7 @@ nav {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #0a1411;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -563,9 +563,10 @@ nav {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrund der Navigation */
-    z-index: 2000; /* Über anderen Elementen */
+    z-index: 3000; /* Über anderen Elementen */
     transition: top 0.3s;
     height: 170px; /* Set a fixed height for the nav bar */
+    font-size: 12px;
 }
 
 /* Weitere Stile bleiben unverändert... */
@@ -594,11 +595,14 @@ nav {
 
     .nav-links li {
         padding: 20px 0;
+
     }
 
     .burger {
-        display: block; /* Zeige das Burger-Menü-Symbol */
-    }
+        image: url("../img/burger.jpg");
+     }
+
+   
     img {
         justify-content: center;
         min-width: 120%;
