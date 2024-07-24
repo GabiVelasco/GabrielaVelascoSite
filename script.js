@@ -42,3 +42,74 @@ function minusSlides() {
     clearTimeout(timer); // Clear the timer when navigating manually
     showSlides(slideIndex -= 1);
 }
+
+
+ // Variables to track the previous scroll position
+ let lastScrollTop = 0;
+ const header1 = document.querySelector('.header1');
+
+ // Debugging: Ensure the nav element is selected correctly
+ console.log('Nav element:', header1);
+
+ window.addEventListener('scroll', function() {
+     // Current scroll position
+     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+     // Debugging: Log the current scroll position
+     console.log('Current scroll position:', currentScroll);
+
+     // If scrolling down
+     if (currentScroll > lastScrollTop) {
+         // Hide the entire nav bar
+         header1.style.top = `-${header1.offsetHeight}px`; // Use the nav's height to hide it completely
+         // Debugging: Log the new top value
+         console.log('Hiding nav, new top:', header1.style.top);
+     } else {
+         // Show the nav bar
+         header1.style.top = "0";
+         // Debugging: Log the new top value
+         console.log('Showing nav, new top:', header1.style.top);
+     }
+
+     // Update the last scroll position
+     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+
+     // Debugging: Log the last scroll position
+     console.log('Last scroll position:', lastScrollTop);
+ });
+
+
+
+  // Variables to track the previous scroll position
+  let lastScrollTop2 = 0;
+  const nav = document.querySelector('nav');
+
+  // Debugging: Ensure the nav element is selected correctly
+  console.log('Nav element:', nav);
+
+  window.addEventListener('scroll', function() {
+      // Current scroll position
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Debugging: Log the current scroll position
+      console.log('Current scroll position:', currentScroll);
+
+      // If scrolling down
+      if (currentScroll > lastScrollTop2) {
+          // Hide the entire nav bar
+          nav.style.top = `-${nav.offsetHeight}px`; // Use the nav's height to hide it completely
+          // Debugging: Log the new top value
+          console.log('Hiding nav, new top:', nav.style.top);
+      } else {
+          // Show the nav bar
+          nav.style.top = "0";
+          // Debugging: Log the new top value
+          console.log('Showing nav, new top:', nav.style.top);
+      }
+
+      // Update the last scroll position
+      lastScrollTop2 = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+
+      // Debugging: Log the last scroll position
+      console.log('Last scroll position:', lastScrollTop2);
+  });
