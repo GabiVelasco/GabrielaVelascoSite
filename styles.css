@@ -253,6 +253,11 @@ nav {
 
     }
 
+   nav button:hover {
+        background-color: #ffcc00;
+
+    }
+
   
 }
 
@@ -367,10 +372,28 @@ footer address {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center; 
+    text-align: justify;
+    text-justify: inter-word; /* Garante justificação completa */
+}
+
+.story2 {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: center; 
+    text-align: justify;
+    text-justify: inter-word; /* Garante justificação completa */
 }
 
 .story h2 {
     color: #333;
+}
+.story2 h2 {
+    color: White;
 }
 
 .story p {
@@ -563,7 +586,7 @@ header {
 /* Fixiere den Header */
 .header1 {
     position: absolute;
-    top: 20px;
+    top:0;
     width: 100%;
     z-index: 2001; /* Sicherstellen, dass die Navigation über dem Header liegt */
     height: 140px;
