@@ -533,11 +533,11 @@ header {
 
 /* Fixiere den Header */
 .header1 {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 2001; /* Sicherstellen, dass die Navigation über dem Header liegt */
-    height: 200px;
+    height: 140px;
 }
 
 nav {
@@ -551,7 +551,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.7); /* Hintergrund der Navigation */
     z-index: 2000; /* Über anderen Elementen */
     transition: top 0.3s;
-    height: 230px; /* Set a fixed height for the nav bar */
+    height: 170px; /* Set a fixed height for the nav bar */
 }
 
 /* Weitere Stile bleiben unverändert... */

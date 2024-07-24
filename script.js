@@ -61,7 +61,7 @@ function minusSlides() {
      // If scrolling down
      if (currentScroll > lastScrollTop) {
          // Hide the entire nav bar
-         header1.style.top = `-${header1.offsetHeight}px`; // Use the nav's height to hide it completely
+         header1.style.height = `-80px`; // Use the nav's height to hide it completely
          // Debugging: Log the new top value
          console.log('Hiding nav, new top:', header1.style.top);
      } else {
