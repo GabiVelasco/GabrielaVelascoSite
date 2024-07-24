@@ -548,7 +548,7 @@ header {
 /* Fixiere den Header */
 .header1 {
     position: absolute;
-    top: 30px;
+    top: 20px;
     width: 100%;
     z-index: 2001; /* Sicherstellen, dass die Navigation über dem Header liegt */
     height: 140px;
