@@ -113,3 +113,11 @@ function minusSlides() {
       // Debugging: Log the last scroll position
       console.log('Last scroll position:', lastScrollTop2);
   });
+
+  function changeLanguage(lang) {
+    if (lang === 'en') {
+        window.location.href = "index_en.html"; // English version
+    } else if (lang === 'de') {
+        window.location.href = "index_de.html"; // German version
+    }
+}

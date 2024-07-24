@@ -243,15 +243,17 @@ nav {
         display: block;
     }
 
-    .languages {
-        order: 1;
+    .language-selector {
+        
         margin-left: 0;
     }
 
-    .burger {
-        display: block;
-        order: 2;
+    .language-selector button:hover {
+        background-color: #ffcc00;
+
     }
+
+  
 }
 
 
