@@ -71,10 +71,17 @@
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    font-size: calc(18px + .5vw);
     font-size-adjust: auto;
+    top: 30%;
+
 }
 
+h1 { font-size: calc(18px + .5vw);}
+h2 { font-size: calc(12px + .5vw);}
 
+.header1 h1 { font-size: calc(22px + .5vw);}
+.header1 h2 {  top: 30%;}
 
 
 .style1 {
@@ -496,10 +503,7 @@ main {
     align-items: center;
 }
 
-h1 { font-size: calc(18px + .5vw);}
-h2 { font-size: calc(12px + .5vw);}
-header h1 { font-size: calc(18px + .5vw);}
-.header1 h1 { font-size: calc(22px + .5vw);}
+
 
 
 /* REWRITING SOME CODE:  */
