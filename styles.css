@@ -71,6 +71,7 @@
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    font-size-adjust: auto;
 }
 
 
@@ -260,7 +261,7 @@ nav ul li a:hover {
 section {
     /* padding: 1rem; */
     background-color: #fff;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 
@@ -463,6 +464,8 @@ footer address {
    
     
     img { min-width: 80%;}
+
+ 
 }
 
 img {
@@ -493,7 +496,10 @@ main {
     align-items: center;
 }
 
-
+h1 { font-size: calc(18px + .5vw);}
+h2 { font-size: calc(12px + .5vw);}
+header h1 { font-size: calc(18px + .5vw);}
+.header1 h1 { font-size: calc(22px + .5vw);}
 
 
 /* REWRITING SOME CODE:  */
@@ -605,23 +611,4 @@ img {
     margin-left: 13%;
     justify-content: center;
     align-items: center;
-}
-
-/* * Media Query for very small screens (less than 40%) */ 
-@media screen and (max-width: 40%) {
-    img {
-        width: 100%; /* Ensure the image follows the proportional size of the header */
-        max-width: 100%; /* Ensure it does not exceed the container's width */
-        height: auto;
-        margin-left: 0; /* Center the image */
-    }
-
-    /* Additional styles for header or other elements if needed */
-    header {
-        width: 100%;
-    }
-
-    nav {
-        width: 100%;
-    }
 }
