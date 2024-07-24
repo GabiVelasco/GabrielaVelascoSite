@@ -663,3 +663,20 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Color on hover */
+}
