@@ -324,16 +324,20 @@ footer {
 
 footer address {
     margin: 0;
+    padding:20px;
 }
 
+.kontakt {
+    padding:20px;
+}
 
 /* Allgemeine Stile */
 
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: center; 
 
