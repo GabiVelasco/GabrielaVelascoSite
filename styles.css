@@ -165,6 +165,11 @@ h2 { font-size: calc(12px + .5vw);}
     font-size: 16px;
     border: none;
     display: none;
+  
+  }
+
+  .dropbtn img {
+    width: 50px;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -321,7 +326,42 @@ footer address {
     
 
 }
-.container img {justify-content: center; align-items: center;}
+.container img {
+    
+    justify-content: center; 
+    align-items: center;
+    max-width: 60%;
+    min-width: 50%;
+    height: auto;
+    border-radius: 5px;
+
+
+    
+
+}
+
+.image-container {
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    overflow: hidden; /* Optional: Prevent overflow if the image becomes larger */
+  
+
+}
+
+.image-container img {
+    width: calc(100% - 20px); /* Adjust the size relative to the container, with some padding */
+    max-width: 500px;
+    min-width: 100px;
+    height: auto;
+    position:centered;
+    justify-content: center; 
+    align-items: center;
+    display:block;
+    
+    
+}
 
 .story {
     background-color: #fff;
@@ -362,17 +402,31 @@ footer address {
 
 /* Slideshow Container */
 .slideshow-container {
-    position: relative;
+    position:relative;
     max-width: 1000px;
     margin: auto;
     align-items: center;
     justify-content: center; 
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    overflow: hidden; /* Optional: Prevent overflow if the image becomes larger */
+  
 }
 
 .mySlides {
     display: none;
     align-items: center;
     justify-content: center; 
+
+    width: calc(100% - 20px); /* Adjust the size relative to the container, with some padding */
+    max-width: 500px;
+    min-width: 100px;
+    height: auto;
+    position:centered;
+    justify-content: center; 
+    align-items: center;
+    display:block;
+    
 }
 
 .mySlides img {
@@ -381,8 +435,20 @@ footer address {
     align-items: center;
     justify-content: center; 
     -ms-text-combine-horizontal: middle;
+
+    width: calc(100% - 20px); /* Adjust the size relative to the container, with some padding */
+    max-width: 500px;
+    min-width: 100px;
+    height: auto;
+    position:centered;
+    justify-content: center; 
+    align-items: center;
+    display:block;
     
 }
+
+
+
 
 .fade {
    
@@ -477,20 +543,33 @@ footer address {
 
 img {
     max-width: 60%;
-    min-width: 50%;
+    min-width: 40%;
     height: auto;
     border-radius: 5px;
-    margin-left: 13%;
+    /* margin-left: 20%; */
     justify-content: center;
     align-items: center;
+    width: 100px;
+    
+ 
 }
 
 
 
 .img {
 
+    max-width: 60%;
+    min-width: 40%;
+    height: auto;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
+    width: 100px !important;
+    z-index: 4000;
+ 
+    
+
+ 
 }
 
 
@@ -634,7 +713,6 @@ main {
         min-width: 60%;
         height: auto;
         border-radius: 5px;
-        margin-left: 13%;
         justify-content: center;
         align-items: center;
     }
@@ -676,3 +754,10 @@ main {
         background-position: 0% 0%;
     }
 }
+
+
+
+
+
+
+
