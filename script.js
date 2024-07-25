@@ -30,7 +30,7 @@ function showSlides(n) {
     timer = setTimeout(() => {
         slideIndex++;
         showSlides(slideIndex);
-    }, 5000); // Change slide every 5 seconds
+    }, 1500); // Change slide every 5 seconds
 }
 
 function plusSlides(n) {
