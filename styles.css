@@ -326,6 +326,9 @@ footer address {
 .container {
     width: 80%;
     margin: 0;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
     align-items: center;
     justify-content: center; 
 
@@ -380,6 +383,7 @@ footer address {
     max-width: 1200px; /* Optional: limit maximum width */
     padding-left: 50px;
     padding: 20px; /* Optional: padding inside the box */
+    margin-left: 20%;
 
 
     
@@ -397,6 +401,7 @@ footer address {
     max-width: 1200px; /* Optional: limit maximum width */
     padding-left: 50px;
     padding: 20px; /* Optional: padding inside the box */
+    margin-left: 20%;
 
 
    
@@ -414,7 +419,8 @@ footer address {
     max-width: 1200px; /* Optional: limit maximum width */
     padding-left: 50px;
     padding: 20px; /* Optional: padding inside the box */
-    background: black
+    background: black;
+    margin-left: 20%;
 
 
    
@@ -442,7 +448,6 @@ footer address {
     justify-content: center; 
     display: flex;
     width: 600px; /* Ensure the container takes full width */
-    margin-left: -10%;
   
 }
 
@@ -468,6 +473,7 @@ footer address {
     justify-content: center; 
     align-items: center;
     display:block;
+    margin-left: -3%;
 
 
     
@@ -572,7 +578,7 @@ img {
     min-width: 40%;
     height: auto;
     border-radius: 5px;
-    /* margin-left: 20%; */
+    margin-left: 20%;
     justify-content: center;
     align-items: center;
     width: 100px;
