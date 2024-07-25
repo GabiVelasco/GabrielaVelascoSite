@@ -322,7 +322,7 @@ footer address {
 
 .container {
     width: 90%;
-    margin: auto;
+    margin: 0;
     padding: 10px;
     align-items: center;
     justify-content: center; 
