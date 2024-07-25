@@ -327,6 +327,7 @@ footer address {
     width: 90%;
     margin: 0;
     padding: 5%;
+    padding-right: 0;
     align-items: center;
     justify-content: center; 
 
