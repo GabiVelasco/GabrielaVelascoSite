@@ -281,6 +281,10 @@ section {
     background-color: black;
 }
 
+.blackback2 {
+    background-color: rgba(0, 0, 0, 0.453);
+}
+
 .white {
     color: white;
 }
