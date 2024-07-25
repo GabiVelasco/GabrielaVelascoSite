@@ -73,7 +73,6 @@ nav {
     font-size: 10px;
     font-size: calc(12px + .5vw);
     font-size-adjust: auto;    
-    overflow-x: hidden;
     
 }
 
