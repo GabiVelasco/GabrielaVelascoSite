@@ -408,7 +408,7 @@ footer address {
 /* Slideshow Container */
 .slideshow-container {
     position:relative;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     align-items: center;
     justify-content: center; 
@@ -421,7 +421,7 @@ footer address {
     display: none;
     align-items: center;
     justify-content: center; 
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 
     
