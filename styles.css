@@ -326,8 +326,6 @@ footer address {
 .container {
     width: 80%;
     margin: 0;
-    padding: 5%;
-    padding-right: -5%;
     align-items: center;
     justify-content: center; 
 
