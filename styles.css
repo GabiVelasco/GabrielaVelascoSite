@@ -48,7 +48,6 @@ header {
     width: 100%;
     z-index: 2001; /* Sicherstellen, dass die Navigation über dem Header liegt */
     height: 140px;
-    overflow-x: hidden;
 }
 
 
@@ -369,7 +368,6 @@ footer address {
 
 .story {
     background-color: #fff;
-    padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -377,10 +375,15 @@ footer address {
     justify-content: center; 
     text-align: justify;
     text-justify: inter-word; /* Garante justificação completa */
+    width: 90%; /* or your desired width */
+    max-width: 1200px; /* Optional: limit maximum width */
+    margin: 20px auto; /* Centers horizontally */
+    padding-left: 50px;
+    padding: 30px; /* Optional: padding inside the box */
+    
 }
 
 .story2 {
-    padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -389,6 +392,13 @@ footer address {
     justify-content: center; 
     text-align: justify;
     text-justify: inter-word; /* Garante justificação completa */
+    max-width: 1200px; /* Optional: limit maximum width */
+    margin: 20px auto; /* Centers horizontally */
+    padding-left: 50px;
+    padding: 30px; /* Optional: padding inside the box */
+    width: 90%; /* or your desired width */
+
+   
 }
 
 .story h2 {
