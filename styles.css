@@ -377,7 +377,6 @@ footer address {
     text-justify: inter-word; /* Garante justificação completa */
     width: 80%; /* or your desired width */
     max-width: 1200px; /* Optional: limit maximum width */
-    margin: 20px auto; /* Centers horizontally */
     padding-left: 50px;
     padding: 30px; /* Optional: padding inside the box */
     
@@ -393,7 +392,6 @@ footer address {
     text-align: justify;
     text-justify: inter-word; /* Garante justificação completa */
     max-width: 1200px; /* Optional: limit maximum width */
-    margin: 20px auto; /* Centers horizontally */
     padding-left: 50px;
     padding: 30px; /* Optional: padding inside the box */
     width: 80%; /* or your desired width */
