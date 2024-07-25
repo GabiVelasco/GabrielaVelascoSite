@@ -27,6 +27,7 @@ header {
     text-align: center;
     padding: 1rem 0;
     animation: diagonalGradient 2s ease infinite; /* Diagonale Hintergrundanimation */
+    overflow-x: hidden;
 }
 
 /* Header-Inhalt */
@@ -37,6 +38,7 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    overflow-x: hidden;
 }
 
 /* Fixiere den Header */
@@ -46,6 +48,7 @@ header {
     width: 100%;
     z-index: 2001; /* Sicherstellen, dass die Navigation über dem Header liegt */
     height: 140px;
+    overflow-x: hidden;
 }
 
 
@@ -70,6 +73,7 @@ nav {
     font-size: 10px;
     font-size: calc(12px + .5vw);
     font-size-adjust: auto;    
+    overflow-x: hidden;
     
 }
 
