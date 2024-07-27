@@ -23,6 +23,9 @@ body {
     background-color: #f7f7f7;
     padding-top: 150px; /* Platz für den fixierten Header */
     overflow-x: hidden;
+    justify-content: space-between; 
+    letter-spacing:15;
+    font-family:Montserrat Alternates;
 }
 
 /* Header-Stile */
@@ -110,6 +113,9 @@ h2 { font-size: calc(12px + .5vw);}
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+  justify-content: space-between; 
+    letter-spacing:15;
+    font-family:Montserrat Alternates;
 
     
 }
@@ -132,12 +138,19 @@ h2 { font-size: calc(12px + .5vw);}
 .nav-links {
     list-style-type: none; 
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    border-spacing:15svh;
     align-items: center; 
-    padding-top: 107px;
+    padding-top: 207px;
     cursor: pointer;
+    font-size: 15px;
+    padding-left:-50px;
+    right: 50px;
+    cursor: pointer;
+    transition: transform 0.5s;
 
-    font-size: 11px;
+    
+    
 }
 
 .nav-links li {
@@ -149,10 +162,19 @@ h2 { font-size: calc(12px + .5vw);}
     text-decoration: none;
     font-size: 1.1rem;
     transition: all 0.3s ease;
+    padding-left:10px;
+    padding-right: 50px;
+  
 }
 
 .nav-links a:hover {
-    color: #ffcc00;
+    color: #6d1187;
+    box-shadow:inset white 4px;
+    font-weight: 200;
+}
+.nav-link:hover a,
+.nav-link:focus a {
+    transform: translateY(-10px);
 }
 
 .burger {
@@ -217,29 +239,44 @@ h2 { font-size: calc(12px + .5vw);}
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover { color: #ffcc00;}
+  .dropdown-content a:hover { color: #6d1187;}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #be8c20;}
+  .dropdown:hover .dropbtn {background-color: #6d1187;}
 
 
 
-
-.language-selector button:hover {
-    background-color: #ffcc00;
-
-}
 
 nav button:hover {
-    background-color: #ffcc00;
+    background-color:  #6d1187;
 
 }
 
 .lang-button:hover {
-    background-color: #ffcc00;
+    background-color:  #6d1187;
+}
+
+.language-selector {
+        
+    margin-left: 0;
+    padding-top: 100px;
+    background-color: transparent;
+   
+    
+}
+.language-selector button {
+    background-color: transparent;
+    color: white;
+
+}
+
+.language-selector button:hover {
+  
+    background-color: black;
+    color: white;
 }
 
 
@@ -265,7 +302,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color:  #6d1187;
 }
 
 section {
@@ -285,7 +322,7 @@ section {
     background-color: rosybrown;
 }
 .red {
-    background-color: rgba(127, 46, 76);
+    background-color: rgba(114, 14, 14, 0.7);
 }
 
 
@@ -294,6 +331,7 @@ section {
 .blackback {
     background-color: black;
 }
+.width {width:100%; min-width: 500px;}
 
 .blackback2 {
     background-color: rgba(0, 0, 0, 0.453);
@@ -384,7 +422,6 @@ footer address {
     align-items: center;
     display: flex;
     width: 100%; /* Ensure the container takes full width */
-    overflow: hidden; /* Optional: Prevent overflow if the image becomes larger */
   
 
 }
@@ -539,7 +576,7 @@ footer address {
     justify-content: center; 
     align-items: center;
     display:block;
-    margin-left: -34%;
+    margin-left: -20%;
     width: 500px;
     height: 450px;
     
@@ -706,7 +743,8 @@ main {
 }
 
 .social-icons a:hover {
-    color: #007bff; /* Color on hover */
+    color: #6d1187;
+    /* Color on hover */
 }
 
 
@@ -757,22 +795,44 @@ main {
         
         margin-left: 0;
         padding-top: 100px;
+        background-color: transparent;
        
         
     }
+    .language-selector button {
+        background-color: transparent;
+        color: white;
+
+    }
 
     .language-selector button:hover {
-        background-color: #ffcc00;
+      
+        background-color: black;
+        color: white;
+      
+      
 
     }
 
    nav button:hover {
-        background-color: #ffcc00;
+     
+        background-color: #6d1187;
+        color: #6d1187;
+      
+
+    }
+    .lang-button button{
+
+        padding-top: 100px;
+        background-color: none;
+        color: transparent;
+
 
     }
 
     .lang-button:hover {
-        background-color: #ffcc00;
+        background-color: black;
+        color: white;
       
     }
 
@@ -887,4 +947,68 @@ p, h1, h2, h3, h4, article, fieldset, footer { font-family:Montserrat Alternates
     display: flex; /* Flex display for potential alignment adjustments */
     align-items: center; /* Center text vertically */
     box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.image-container img {
+    border: 5px solid #ffffff; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    padding: 10px; /* Space between the border and the image */
+    background-color: #f0f0f0; /* Background color behind the image */
+    max-width: 100%; /* Ensures responsiveness */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+
+.image-container2 img {
+    border: 5px solid #131212; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    padding: 10px; /* Space between the border and the image */
+    background-color: #000000; /* Background color behind the image */
+    max-width: 70%; /* Ensures responsiveness */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+    margin: 20px;
+    margin-left:15%;
+}
+
+.image-container2 img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+
+.image-container3 img {
+    border: 5px solid transparent; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    padding: 10px; /* Space between the border and the image */
+    background-color: transparent; /* Background color behind the image */
+    max-width: 100%; /* Ensures responsiveness */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+}
+
+.image-container3 img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+.animation h1{
+    animation: grow 1.5s ease-out;
+	animation-delay: 1s;
+}
+
+
+@keyframes grow {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
 }
