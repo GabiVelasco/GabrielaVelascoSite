@@ -679,12 +679,14 @@ main {
     
     /* Dropdown Button */
 .dropbtn {
+    
     background-color: transparent;
     color: white;
     padding: 10px;
     font-size: 16px;
     border: none;
-    display: none;
+    cursor: pointer; /* Add a cursor pointer to indicate it's clickable */
+    display: inline-block; /* Make the button visible */
   
   }
 
@@ -711,7 +713,7 @@ main {
     background-color: #f1f1f1;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 100000000;
     padding-top: 20px;
   }
   
@@ -723,14 +725,20 @@ main {
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover { display: block; color: #6d1187;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #6d1187;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: #6d1187;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #6d1187;
+}
 
 
 
@@ -773,10 +781,6 @@ main {
             max-width: 80%;
     }
 
-       /* Show the dropdown button if width is smaller than 60% */
-       .dropdown .dropbtn {
-        display: block;
-    }
 
     .language-selector {
         
@@ -823,7 +827,7 @@ main {
       
     }
 
-  .header1, img, .text-container, .container, section, .story, .story1, .story2, .story3, .story4 {
+  img, .text-container, .container, section, .story, .story1, .story2, .story3, .story4 {
     display: block;
    
     
@@ -991,10 +995,7 @@ p, h1, h2, h3, h4, article, fieldset, footer { font-family:Montserrat Alternates
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
     transition: all 0.3s ease;
-    
-    /* transition: color padding-bottom  0.3s ease, transform 0.3s ease; */
     font-weight: normal; /* initial font weight */
     display: inline-block; /* ensures the transform does not affect surrounding elements */
     z-index: 9000001;
@@ -1008,7 +1009,6 @@ p, h1, h2, h3, h4, article, fieldset, footer { font-family:Montserrat Alternates
     color: #6d1187;
     box-shadow:inset white 4px;
     font-weight: 200;
-    color: #6d1187;
     font-weight: bold; /* or any bolder value like 600, 700, etc. */
     transform: scale(1.1); /* increase size by 10% */
 }
@@ -1017,3 +1017,8 @@ p, h1, h2, h3, h4, article, fieldset, footer { font-family:Montserrat Alternates
 .nav-link:focus a {
     transform: translateY(-10px);
 }
+
+
+
+
+

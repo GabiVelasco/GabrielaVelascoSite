@@ -89,3 +89,26 @@ function minusSlides() {
         window.location.href = "index_de.html"; // German version
     }
 }
+
+// JavaScript to handle dropdown
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the button and the dropdown content
+    var dropdownBtn = document.querySelector(".dropbtn");
+    var dropdownContent = document.querySelector(".dropdown-content");
+
+    // Toggle the visibility of the dropdown content on button click
+    dropdownBtn.addEventListener("click", function(event) {
+        event.stopPropagation(); // Prevent the click event from bubbling up
+        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function() {
+        dropdownContent.style.display = "none";
+    });
+
+    // Stop the dropdown from closing if the user clicks inside the dropdown content
+    dropdownContent.addEventListener("click", function(event) {
+        event.stopPropagation(); // Prevent the click event from closing the dropdown
+    });
+});
