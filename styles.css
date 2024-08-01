@@ -135,47 +135,7 @@ h2 { font-size: calc(12px + .5vw);}
     
 } 
 
-.nav-links {
-    list-style-type: none; 
-    display: flex;
-    justify-content:space-between;
-    border-spacing:15svh;
-    align-items: center; 
-    padding-top: 207px;
-    cursor: pointer;
-    font-size: 15px;
-    padding-left:-50px;
-    right: 50px;
-    cursor: pointer;
-    transition: transform 0.5s;
 
-    
-    
-}
-
-.nav-links li {
-    margin: 5px 10px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    padding-left:10px;
-    padding-right: 50px;
-  
-}
-
-.nav-links a:hover {
-    color: #6d1187;
-    box-shadow:inset white 4px;
-    font-weight: 200;
-}
-.nav-link:hover a,
-.nav-link:focus a {
-    transform: translateY(-10px);
-}
 
 .burger {
     display: block;
@@ -192,62 +152,6 @@ h2 { font-size: calc(12px + .5vw);}
     margin: 5px 0;
     transition: transform 0.3s ease-in-out;
 }
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: transparent;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    display: none;
-  
-  }
-
-  .dropbtn img {
-    width: 50px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content ul li a {
-    list-style-type: none;
-
-}
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    padding-top: 20px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover { color: #6d1187;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #6d1187;}
-
-
 
 
 nav button:hover {
@@ -507,7 +411,7 @@ footer address {
     justify-content: space-between; 
     letter-spacing:15;
     font-family:Montserrat Alternates;
-    display: flex;
+    display: block;
 
 
    
@@ -749,11 +653,18 @@ main {
     font-size: 24px; /* Icon size */
     margin: 0 10px; /* Spacing between icons */
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color padding-bottom  0.3s ease, transform 0.3s ease;
+    font-weight: normal; /* initial font weight */
+    display: inline-block; /* ensures the transform does not affect surrounding elements */
+ 
 }
+
 
 .social-icons a:hover {
     color: #6d1187;
+    font-weight: bold; /* or any bolder value like 600, 700, etc. */
+    transform: scale(1.1); /* increase size by 10% */
+    
     /* Color on hover */
 }
 
@@ -761,15 +672,70 @@ main {
 
 /* ____________MEDIA SCREEN AND KEYFRAMES______________________ */
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1340px) {
 
     .nav-links {
         display: none; /* Verstecke die Hauptnavigation */ } 
     
-     /* Show the dropdown button if width is smaller than 60% */
-     .dropdown .dropbtn {
-        display: block;
-    }}
+    /* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    display: none;
+  
+  }
+
+  .dropbtn img {
+    width: 50px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .dropdown-content ul li a {
+    list-style-type: none;
+
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-top: 20px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover { display: block; color: #6d1187;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #6d1187;}
+
+
+
+
+}
 
 /* Media Query für kleine Bildschirme */
 @media screen and (max-width: 960px) {
@@ -800,6 +766,7 @@ main {
     .burger {
         display: block; /* Zeige das Burger-Menü-Symbol */
     }
+
     img {
             justify-content: center;
             min-width: 70%;
@@ -856,7 +823,7 @@ main {
       
     }
 
-  section, .header1, img, .text-container, .container, section, .story, .story1, .story2, .story3, .story4 {
+  .header1, img, .text-container, .container, section, .story, .story1, .story2, .story3, .story4 {
     display: block;
    
     
@@ -869,6 +836,8 @@ main {
 
   .container { margin-left: 5%; width: 90%;}
 }
+
+
 
 
 
@@ -995,4 +964,56 @@ p, h1, h2, h3, h4, article, fieldset, footer { font-family:Montserrat Alternates
 		opacity: 1;
 	}
 
+}
+
+.nav-links {
+    display: inline-flex;
+    justify-content:space-between;
+    border-spacing:10svh;
+    align-items: center; 
+    padding-top: 207px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.5s;
+    z-index: 9000000;
+    width:100%;
+
+    
+    
+}
+
+
+
+.nav-links li {
+    margin: 5px 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    
+    /* transition: color padding-bottom  0.3s ease, transform 0.3s ease; */
+    font-weight: normal; /* initial font weight */
+    display: inline-block; /* ensures the transform does not affect surrounding elements */
+    z-index: 9000001;
+    font-size: 1rem;
+    
+
+  
+}
+
+.nav-links a:hover {
+    color: #6d1187;
+    box-shadow:inset white 4px;
+    font-weight: 200;
+    color: #6d1187;
+    font-weight: bold; /* or any bolder value like 600, 700, etc. */
+    transform: scale(1.1); /* increase size by 10% */
+}
+
+.nav-link:hover a,
+.nav-link:focus a {
+    transform: translateY(-10px);
 }
